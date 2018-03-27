@@ -260,7 +260,7 @@ module Sunspot
                                             :open_timeout => config.solr.open_timeout,
                                             :proxy        => config.solr.proxy,
                                             :faraday_client_config => config.faraday.client_config,
-                                            )
+                                            :update_format => :xml)
     end
 
     def indexer
